@@ -36,6 +36,9 @@
             this.txtnum2 = new System.Windows.Forms.TextBox();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnRestar = new System.Windows.Forms.Button();
+            this.btnMultiplicacion = new System.Windows.Forms.Button();
+            this.btnDivision = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,7 +92,7 @@
             // 
             // btnSumar
             // 
-            this.btnSumar.Location = new System.Drawing.Point(205, 270);
+            this.btnSumar.Location = new System.Drawing.Point(505, 98);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(75, 23);
             this.btnSumar.TabIndex = 6;
@@ -107,11 +110,44 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnRestar
+            // 
+            this.btnRestar.Location = new System.Drawing.Point(505, 127);
+            this.btnRestar.Name = "btnRestar";
+            this.btnRestar.Size = new System.Drawing.Size(75, 23);
+            this.btnRestar.TabIndex = 8;
+            this.btnRestar.Text = "Restar";
+            this.btnRestar.UseVisualStyleBackColor = true;
+            this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click);
+            // 
+            // btnMultiplicacion
+            // 
+            this.btnMultiplicacion.Location = new System.Drawing.Point(505, 156);
+            this.btnMultiplicacion.Name = "btnMultiplicacion";
+            this.btnMultiplicacion.Size = new System.Drawing.Size(75, 23);
+            this.btnMultiplicacion.TabIndex = 9;
+            this.btnMultiplicacion.Text = "Multiplicacion";
+            this.btnMultiplicacion.UseVisualStyleBackColor = true;
+            this.btnMultiplicacion.Click += new System.EventHandler(this.btnMultiplicacion_Click);
+            // 
+            // btnDivision
+            // 
+            this.btnDivision.Location = new System.Drawing.Point(505, 185);
+            this.btnDivision.Name = "btnDivision";
+            this.btnDivision.Size = new System.Drawing.Size(75, 23);
+            this.btnDivision.TabIndex = 10;
+            this.btnDivision.Text = "Division";
+            this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 380);
+            this.Controls.Add(this.btnDivision);
+            this.Controls.Add(this.btnMultiplicacion);
+            this.Controls.Add(this.btnRestar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.txtnum2);
@@ -137,6 +173,9 @@
         private System.Windows.Forms.TextBox txtnum2;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnRestar;
+        private System.Windows.Forms.Button btnMultiplicacion;
+        private System.Windows.Forms.Button btnDivision;
     }
 }
 

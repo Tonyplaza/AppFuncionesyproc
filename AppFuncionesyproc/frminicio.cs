@@ -134,5 +134,10 @@ namespace AppFuncionesyproc
         {
 
         }
+
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

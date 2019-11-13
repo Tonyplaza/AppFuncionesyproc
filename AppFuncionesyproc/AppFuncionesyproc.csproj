@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TareaAreayVolumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaAreayVolumen.Designer.cs">
+      <DependentUpon>TareaAreayVolumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TareaCuadrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaCuadrado.Designer.cs">
+      <DependentUpon>TareaCuadrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="firmgrados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TareaPerimetro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaPerimetro.Designer.cs">
+      <DependentUpon>TareaPerimetro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TareaCuadrado.resx">
+      <DependentUpon>TareaCuadrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="firmgrados.resx">
       <DependentUpon>firmgrados.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TareaAreayVolumen.resx">
+      <DependentUpon>TareaAreayVolumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareaPerimetro.resx">
+      <DependentUpon>TareaPerimetro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

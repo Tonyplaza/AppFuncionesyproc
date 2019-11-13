@@ -42,7 +42,7 @@ namespace AppFuncionesyproc
             //validar si el usuario a ingresado valores
             if (this.txtLongitud.Text.Length == 0)
             {
-                MessageBox.Show("Por favor ingrese el valor de A.");
+                MessageBox.Show("Por favor ingrese la Longitud");
                 this.txtLongitud.Focus();//ubica el cursor en el cuadro de texto
                 return;
             }
@@ -52,6 +52,19 @@ namespace AppFuncionesyproc
             //asigno el resultado de x1 en el tectbox txtX1
             this.txtPerimetro.Text = x1.ToString();
             this.txtSuperficie.Text = x2.ToString();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            this.txtLongitud.Text = String.Empty;
+            this.txtPerimetro.Text = String.Empty;
+            this.txtSuperficie.Text = String.Empty;
+            this.txtLongitud.Focus();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

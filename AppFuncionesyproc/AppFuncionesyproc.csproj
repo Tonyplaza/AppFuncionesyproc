@@ -84,6 +84,12 @@
     <Compile Include="TareaPerimetro.Designer.cs">
       <DependentUpon>TareaPerimetro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TareaPerimetroRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaPerimetroRec.Designer.cs">
+      <DependentUpon>TareaPerimetroRec.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="TareaCuadrado.resx">
       <DependentUpon>TareaCuadrado.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TareaPerimetro.resx">
       <DependentUpon>TareaPerimetro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareaPerimetroRec.resx">
+      <DependentUpon>TareaPerimetroRec.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

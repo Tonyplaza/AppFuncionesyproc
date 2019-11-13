@@ -16,7 +16,7 @@ namespace AppFuncionesyproc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TareaPerimetro());
+            Application.Run(new TareaPerimetroRec());
         }
     }
 }

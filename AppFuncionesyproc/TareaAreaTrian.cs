@@ -60,12 +60,38 @@ namespace AppFuncionesyproc
                 this.txtC.Focus();//ubica el cursor en el cuadro de texto
                 return;
             }
+            // sirve para preguntar si hay letras y si hay salir el mensaje de error
+            double result;
+            if (Double.TryParse(this.txtA.Text, out result))
+                a = result;
+            else
+            {
+                MessageBox.Show("Debe ingresar valores numericos");
+                this.txtA.Focus();
+                return;
+            }
+            if (Double.TryParse(this.txtB.Text, out result))
+                b = result;
+            else
+            {
+                MessageBox.Show("Debe ingresar valores numericos");
+                this.txtB.Focus();
+                return;
+            }
+            if (Double.TryParse(this.txtC.Text, out result))
+                c = result;
+            else
+            {
+                MessageBox.Show("Debe ingresar valores numericos");
+                this.txtC.Focus();
+                return;
+            }
             a = Double.Parse(this.txtA.Text);
             b = Double.Parse(this.txtB.Text);
             c = Double.Parse(this.txtC.Text);
+            // se supuede usar para ahorar lineas de codigo: this.txtArea.Text=Area(a,b,c).ToString("0.00");
             double x1 = Area(a, b, c);
-            //asigno el resultado de x1 en el tectbox txtX1
-            this.txtArea.Text = x1.ToString();
+            this.txtArea.Text = x1.ToString("0.00");
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace AppFuncionesyproc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TareaMetros());
+            Application.Run(new TareaAreaTrian());
         }
     }
 }

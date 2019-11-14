@@ -67,6 +67,7 @@
             // 
             this.txtResultado.Location = new System.Drawing.Point(122, 77);
             this.txtResultado.Name = "txtResultado";
+            this.txtResultado.ReadOnly = true;
             this.txtResultado.Size = new System.Drawing.Size(100, 20);
             this.txtResultado.TabIndex = 3;
             // 
@@ -78,6 +79,7 @@
             this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnNuevo
             // 
@@ -87,6 +89,7 @@
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnSalir
             // 
@@ -96,6 +99,7 @@
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // TabajoFactorial
             // 

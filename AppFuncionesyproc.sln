@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTareaClass", "AppTareaCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareaFormulaGeneral", "TareaFormulaGeneral\TareaFormulaGeneral.csproj", "{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareaBilletes", "TareaBilletes\TareaBilletes.csproj", "{9D93FBA2-EC24-4DA1-A774-7C343AE63CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D93FBA2-EC24-4DA1-A774-7C343AE63CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D93FBA2-EC24-4DA1-A774-7C343AE63CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D93FBA2-EC24-4DA1-A774-7C343AE63CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D93FBA2-EC24-4DA1-A774-7C343AE63CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

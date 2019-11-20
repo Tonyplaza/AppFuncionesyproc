@@ -22,5 +22,17 @@ namespace AppTareaClass
             x2 = (-b - Math.Sqrt(d)) / (2 * a);
             return x2;
         }
+        public static long billete10(int a)
+        {
+            int b;
+            b = a / 10;
+            return b;
+        }
+        public static long billete5(int a)
+        {
+            int b;
+            b = (a % 10) / 5;
+            return b;
+        }
     }
 }

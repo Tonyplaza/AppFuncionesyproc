@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFuncionesyproc", "AppFun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTareaClass", "AppTareaClass\AppTareaClass.csproj", "{33001CEC-6CCE-4F6D-95B4-260F7B2DC108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareaFormulaGeneral", "TareaFormulaGeneral\TareaFormulaGeneral.csproj", "{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{33001CEC-6CCE-4F6D-95B4-260F7B2DC108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33001CEC-6CCE-4F6D-95B4-260F7B2DC108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33001CEC-6CCE-4F6D-95B4-260F7B2DC108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B64B8D-387A-4D91-90E8-9613AF25C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

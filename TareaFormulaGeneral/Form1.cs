@@ -41,22 +41,25 @@ namespace TareaFormulaGeneral
             a = Double.Parse(this.txtA.Text);
             b = Double.Parse(this.txtB.Text);
             c = Double.Parse(this.txtC.Text);
-            if (a == 0)
+            string msg1="",msg2="";
+            double x1 = AppTareaClass.Formula.x1(a, b, c, out msg1);
+            double x2 = AppTareaClass.Formula.x2(a, b, c, out msg2);
+            if ( msg1.Length == 0)
             {
-                MessageBox.Show("Error al difivir para cero...");
-                return ;
+                this.txtX1.Text = x1.ToString("0.00");
             }
-            //verificar si d es positivo
-            d = (b * b) - (4 * a * c);
-            if (d < 0)
+            else
             {
-                MessageBox.Show("Error, la ecuacion tiene soluciones imaginarias");
-                return ;
+                this.txtX1.Text = msg1;
             }
-            double x1 = AppTareaClass.Formula.x1(a, b, c);
-            double x2 = AppTareaClass.Formula.x2(a, b, c);
-            this.txtX1.Text = x1.ToString();
-            this.txtX2.Text = x2.ToString();
+            if (msg2.Length == 0)
+            {
+                this.txtX2.Text = x2.ToString("0.00");
+            }
+            else
+            {
+                this.txtX2.Text = msg2;
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -72,6 +75,41 @@ namespace TareaFormulaGeneral
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnGetX1_Click(object sender, EventArgs e)
+        {
+            double a, b, c, d,x1;
+            if (this.txtA.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor ingrese el valor de A.");
+                this.txtA.Focus();//ubica el cursor en el cuadro de texto
+                return;
+            }
+            if (this.txtB.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor ingrese el valor de B.");
+                this.txtB.Focus();//ubica el cursor en el cuadro de texto
+                return;
+            }
+            if (this.txtC.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor ingrese el valor de C.");
+                this.txtC.Focus();//ubica el cursor en el cuadro de texto
+                return;
+            }
+            a = Double.Parse(this.txtA.Text);
+            b = Double.Parse(this.txtB.Text);
+            c = Double.Parse(this.txtC.Text);
+            try
+            {
+                x1 = AppTareaClass.Formula.getx1(a, b, c);
+                this.txtX1.Text = x1.ToString("0.00");
+            }
+            catch (Exception ex1)
+            {
+                MessageBox.Show(ex1.Message.ToString());
+            }
         }
     }
 }

@@ -42,6 +42,7 @@
             this.txtX1 = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
+            this.btnGetX1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +141,7 @@
             // 
             this.txtX2.Location = new System.Drawing.Point(158, 221);
             this.txtX2.Name = "txtX2";
+            this.txtX2.ReadOnly = true;
             this.txtX2.Size = new System.Drawing.Size(100, 20);
             this.txtX2.TabIndex = 10;
             // 
@@ -147,6 +149,7 @@
             // 
             this.txtX1.Location = new System.Drawing.Point(158, 187);
             this.txtX1.Name = "txtX1";
+            this.txtX1.ReadOnly = true;
             this.txtX1.Size = new System.Drawing.Size(100, 20);
             this.txtX1.TabIndex = 11;
             // 
@@ -164,11 +167,22 @@
             this.txtB.Size = new System.Drawing.Size(100, 20);
             this.txtB.TabIndex = 13;
             // 
+            // btnGetX1
+            // 
+            this.btnGetX1.Location = new System.Drawing.Point(334, 214);
+            this.btnGetX1.Name = "btnGetX1";
+            this.btnGetX1.Size = new System.Drawing.Size(75, 23);
+            this.btnGetX1.TabIndex = 14;
+            this.btnGetX1.Text = "Get X1";
+            this.btnGetX1.UseVisualStyleBackColor = true;
+            this.btnGetX1.Click += new System.EventHandler(this.btnGetX1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 301);
+            this.Controls.Add(this.btnGetX1);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtX1);
@@ -206,6 +220,7 @@
         private System.Windows.Forms.TextBox txtX1;
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Button btnGetX1;
     }
 }
 

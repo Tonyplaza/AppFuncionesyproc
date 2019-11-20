@@ -10,7 +10,10 @@ namespace TareaBilletes
     {
         static void Main(string[] args)
         {
-            cambio(27.50);
+            double a;
+            Console.WriteLine("Ingrese el dinero: ");
+            a=double.Parse(Console.ReadLine());
+            cambio(a);
             Console.ReadKey();
         }
         static void cambio(double dolares)

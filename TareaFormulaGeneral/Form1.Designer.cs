@@ -136,6 +136,7 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 9;
+            this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
             // 
             // txtX2
             // 

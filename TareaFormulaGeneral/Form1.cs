@@ -111,5 +111,10 @@ namespace TareaFormulaGeneral
                 MessageBox.Show(ex1.Message.ToString());
             }
         }
+
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

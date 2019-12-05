@@ -28,32 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.lstNum = new System.Windows.Forms.ListBox();
+            this.listBoxVector = new System.Windows.Forms.ListBox();
             this.btnNumero = new System.Windows.Forms.Button();
-            this.btnOrdenar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTamanio = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lstVexctorOrdenado = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // label2
+            // listBoxVector
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Numeros:";
-            // 
-            // lstNum
-            // 
-            this.lstNum.FormattingEnabled = true;
-            this.lstNum.Location = new System.Drawing.Point(46, 87);
-            this.lstNum.Name = "lstNum";
-            this.lstNum.Size = new System.Drawing.Size(120, 95);
-            this.lstNum.TabIndex = 2;
+            this.listBoxVector.FormattingEnabled = true;
+            this.listBoxVector.Location = new System.Drawing.Point(46, 87);
+            this.listBoxVector.Name = "listBoxVector";
+            this.listBoxVector.Size = new System.Drawing.Size(126, 173);
+            this.listBoxVector.TabIndex = 2;
             // 
             // btnNumero
             // 
-            this.btnNumero.Location = new System.Drawing.Point(247, 46);
+            this.btnNumero.Location = new System.Drawing.Point(290, 29);
             this.btnNumero.Name = "btnNumero";
             this.btnNumero.Size = new System.Drawing.Size(108, 23);
             this.btnNumero.TabIndex = 3;
@@ -61,25 +55,61 @@
             this.btnNumero.UseVisualStyleBackColor = true;
             this.btnNumero.Click += new System.EventHandler(this.btnNumero_Click);
             // 
-            // btnOrdenar
+            // label1
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(247, 76);
-            this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
-            this.btnOrdenar.TabIndex = 4;
-            this.btnOrdenar.Text = "Ordenar";
-            this.btnOrdenar.UseVisualStyleBackColor = true;
-            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(46, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Tamaño del vector:";
+            // 
+            // txtTamanio
+            // 
+            this.txtTamanio.Location = new System.Drawing.Point(164, 29);
+            this.txtTamanio.Name = "txtTamanio";
+            this.txtTamanio.Size = new System.Drawing.Size(100, 20);
+            this.txtTamanio.TabIndex = 6;
+            this.txtTamanio.Text = "20";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Vector Original:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(218, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Vector Ordenado:";
+            // 
+            // lstVexctorOrdenado
+            // 
+            this.lstVexctorOrdenado.FormattingEnabled = true;
+            this.lstVexctorOrdenado.Location = new System.Drawing.Point(218, 87);
+            this.lstVexctorOrdenado.Name = "lstVexctorOrdenado";
+            this.lstVexctorOrdenado.Size = new System.Drawing.Size(126, 173);
+            this.lstVexctorOrdenado.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 227);
-            this.Controls.Add(this.btnOrdenar);
-            this.Controls.Add(this.btnNumero);
-            this.Controls.Add(this.lstNum);
+            this.ClientSize = new System.Drawing.Size(471, 288);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lstVexctorOrdenado);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTamanio);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnNumero);
+            this.Controls.Add(this.listBoxVector);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -89,11 +119,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstNum;
+        private System.Windows.Forms.ListBox listBoxVector;
         private System.Windows.Forms.Button btnNumero;
-        private System.Windows.Forms.Button btnOrdenar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTamanio;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lstVexctorOrdenado;
     }
 }
 

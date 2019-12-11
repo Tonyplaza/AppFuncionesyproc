@@ -39,7 +39,12 @@ namespace TareaListaProductos
 
             lista.Add(Productos);
             //Mostrar los elementos en el ListView
-
+            ListViewItem item = new ListViewItem(Productos.Codigo);
+            listViewProductos.Items.Add(item);
+            item.SubItems.Add(Productos.NombreProducto);
+            item.SubItems.Add(Productos.PrecioVenta.ToString());
+            item.SubItems.Add(Productos.FechaCompra.ToString());
+            item.SubItems.Add(Productos.Unidad.ToString());
         }
     }
 }

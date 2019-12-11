@@ -172,7 +172,7 @@
             // columnFechaCompra
             // 
             this.columnFechaCompra.Text = "Fecha Compra";
-            this.columnFechaCompra.Width = 81;
+            this.columnFechaCompra.Width = 92;
             // 
             // columnUnidad
             // 
